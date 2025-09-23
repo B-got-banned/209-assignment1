@@ -14,5 +14,7 @@ class Book { //class keyword used to declare a class followed by the class name 
 
 
 let book1 = new Book("Athena the Brave", "Suzanne Williams", 2010)//creating a new instance of the Book class called book1
+let book2 = new Book("The Son of Neptune", "Rick Riordan", 2011)//creating a new instance of the Book class called book2
 book1.logDetails();//accessing the method of this particular instance of the Book class
 console.log(Book.comment())//logging the static method which belongs to the class itself and not the instances
+console.log(book2.author)//you can even access the properties of the instance of the class
