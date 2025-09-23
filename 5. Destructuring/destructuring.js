@@ -11,3 +11,18 @@ console.log(`${s1}, ${s2}`)
 let [sn1, ...otherSnacks] = snacks//... is the rest parameter which can be used to collect the remaining elements into a new array
 console.log(sn1)
 console.log(otherSnacks)
+
+const family = {father: "Hikaru",
+                mother: "Mo",
+                children: 4,
+                country: "Japan",
+              //  pet: "dog"
+}//object declaration and initialization
+const {children, country} = family//object destructuring by assigning properties to variables of the same name
+console.log(children)
+console.log(country)
+const {father: fatherName, mother: motherName} = family//object destructuring by assigning properties to variables of different names than the properties
+console.log(fatherName)
+console.log(motherName)
+const {pet = "none"} = family//default value that might not exist in the object
+console.log(pet)
